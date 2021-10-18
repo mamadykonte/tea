@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tea Shop</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,500;1,500&family=Roboto:wght@100;400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="logo">
+        <i class="fab fa-envira"></i>
+        <span>Tea Shop</span>
+      </h1>
+      <nav class="item">
+        <a class="navlink" href="index.html">Home</a>
+        <a class="navlink" href="products.html">Products</a>
+        <a class="navlink" href="about.html">About</a>
+        <a class="navlink" href="contact.html">Contact</a>
+      </nav>
+      <div class="burger">
+        <i class="fas fa-bars"></i>
+    </div>
+    </header>
+    <main>
+      <section class="container-coffee">
+        <div class="coffee-img">
+          <img
+            src="https://cdnimg.webstaurantstore.com/images/products/large/460522/1741195.jpg"
+            alt=""
+          />
+        </div>
+        <div class="coffee-content">
+          <div class="coffee-content__trait"></div>
+          <h2 class="coffee-content__title">Black</h2>
+          <p class="coffee-content__content">
+            Black tea, or red tea in China, is one of the most popular tea
+            flavors and is fully oxidized. The leaves of the Camellia sinensis
+            plant are withered, rolled, oxidized / fermented, and dried or fired
+            to produce a strong, full-bodied flavor. Assam, Darjeeling, Nilgiri,
+            and Sri Lanka are a few well-known black tea producing regions, and
+            the flavor will vary based on the region and type of black tea.
+          </p>
+          <a class="coffee-content__link" href="products.html#black">Order now</a>
+        </div>
+      </section>
+
+      <div class="box-btn">
+        <button
+          class="box-btn__btn"
+          data-tea='
+          {
+            "index": "1",
+            "title": "Black",
+            "img":"../img/bg-black.jpeg",
+            "content":"Black tea, or red tea in China, is one of the most popular tea flavors and is fully oxidized. The leaves of the Camellia sinensis plant are withered, rolled, oxidized / fermented, and dried or fired to produce a strong, full-bodied flavor. Assam, Darjeeling, Nilgiri, and Sri Lanka are a few well-known black tea producing regions, and the flavor will vary based on the region and type of black tea.",
+            "link":"products.html#black"
+
+          }'
+        >
+          <img
+            class="box-btn__btn__img"
+            src="./img/black.png"
+            alt="tea black"
+          />
+        </button>
+
+        <button
+          class="box-btn__btn"
+          data-tea='
+          {
+            "index": "2",
+            "title": "Green",
+            "img":"../img/bg-green.jpg",
+            "content":"Green tea is the most popular tea globally, is unoxidized, and has less caffeine than black tea. Camellia sinensis leaves are picked, dried, and heat-treated to prevent oxidation. Chinese people often pan-fire leaves, which creates a duller green color, while Japanese people will typically steam them and achieve a brighter green shade.",
+            "link":"products.html#green"
+          }'
+        >
+          <img
+            class="box-btn__btn__img"
+            src="./img/green.png"
+            alt="tea lemon"
+          />
+        </button>
+        <button
+          class="box-btn__btn"
+          data-tea='
+          {
+            "index": "3",
+            "title": "Lemon",
+            "img":"../img/bg-lemon.jpg",
+            "content":"Made from the leaves of the Camellia sinensis plant in only the Fujian province, white tea varieties are the least processed of all teas. The leaves are simply left to wither and dry on their own, which gives them a very delicate, naturally sweet, and well-rounded flavor. It has very little caffeine.",
+            "link":"products.html#"
+          }'
+        >
+          <img
+            class="box-btn__btn__img"
+            src="./img/lemon.png"
+            alt="tea green"
+          />
+        </button>
+        <button
+          class="box-btn__btn"
+          data-tea='
+          {
+            "index": "4",
+            "title": "Oolong",
+            "img": "../img/bg-oolong.jpg",
+            "content": "Oolong, or wulong, tea is semi-oxidized and picked later in the season than green tea. The leaves come from the Camellia sinensis plant but are bruised by being tossed or shaken in baskets, which changes the oxidation process. They&#39;re heat-treated to stop the oxidation, which can vary based on region and create different flavors.",
+            "link": "products.html#oolong"
+          }'
+        >
+          <img
+            class="box-btn__btn__img"
+            src="./img/oolong.png"
+            alt="tea oolong"
+          />
+        </button>
+        <button
+          class="box-btn__btn"
+          data-tea='
+          {
+            "index": "5",
+            "title": "Rooibos",
+            "img":"../img/bg-rooibos.jpg",
+            "content":"Rooibos tea, or African Red Tea, is an herbal tea that comes from the South African Red Bush, and the leaves are ground and bruised before they&#39;re fermented and dried. Green rooibos tea doesn&#39;t go through an oxidation / fermentation process and has a lighter flavor.",
+            "link":"products.html#rooibos"
+          }'
+        >
+          <img
+            class="box-btn__btn__img"
+            src="./img/rooibos.png"
+            alt="tea rooibos"
+          />
+        </button>
+      </div>
+    </main>
+
+    <footer>
+      <div class="copy"><p>© 2021 Tea Shop</p></div>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>
